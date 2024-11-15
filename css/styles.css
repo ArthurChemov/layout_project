@@ -1,9 +1,10 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  width: 1400px;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -18,38 +19,32 @@ body {
 .header {
   font-family: "Roboto", sans-serif;
 }
-
 .header .container {
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
 }
-
-.header .container .header-nav {
+.header-nav {
   display: flex;
   gap: 48px;
   align-items: center;
 }
-
-.header .container .header-nav .header-nav-links {
+.header-nav-links {
   display: flex;
   gap: 16px;
 }
-
-.header .container .header-nav .header-nav-links .header-nav-link {
+.header-nav-link {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   color: #343434;
   padding: 12px 8px;
 }
-
-.header .container .header-nav .header-nav-links .header-nav-link:hover {
+.header-nav-link:hover {
   color: #036;
   border-bottom: 1px solid #036;
 }
-
-.header .container .header-nav .header-nav-button {
+.header-nav-button {
   font-size: 20px;
   font-weight: 400;
   padding: 14px 30px;
@@ -58,30 +53,25 @@ body {
   background-color: #036;
   color: #fff;
 }
-
-.header .container .header-nav .header-nav-button:hover {
+.header-nav-button:hover {
   background-color: #0d64bc;
 }
 
 .hero-section {
-  font-family: "Roboto", sans-serif;
   color: #FBFBFB;
   margin: 50px 0;
 }
-
 .hero-section .container {
   display: flex;
   gap: 24px;
 }
-
-.hero-section .container .hero-text {
+.hero-text {
   padding: 100px 80px;
   background-color: #036;
   border-radius: 20px;
   width: 100%;
 }
-
-.hero-section .container .hero-text .hero-title {
+.hero-title {
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 600;
@@ -90,15 +80,12 @@ body {
   margin: 0;
   max-width: 518px;
 }
-
-.hero-section .container .hero-text .hero-subtitle {
+.hero-subtitle {
   font-size: 18px;
   font-weight: 400;
-  margin-top: 16px;
-  margin-bottom: 40px;
+  margin: 16px 0 40px;
 }
-
-.hero-section .container .hero-text .hero-btn {
+.hero-btn {
   color: #036;
   font-size: 20px;
   font-weight: 400;
@@ -107,133 +94,134 @@ body {
   border: none;
   background-color: #FBFBFB;
 }
-
-.hero-section .container .hero-text .hero-btn:hover {
+.hero-btn:hover {
   background-color: #0d64bc;
   color: #FBFBFB;
 }
-
-.hero-section .container .hero-image {
+.hero-image {
   border-radius: 20px;
 }
 
 .advantages-section {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
   background-color: #E0E7EF;
   padding: 70px 0;
 }
-
-.advantages-section .container .section-title {
+.advantages-section .section-title {
   padding: 30px 50px;
-  border-radius: 16px;
   background-color: #FBFBFB;
+  border-radius: 16px;
   margin-bottom: 20px;
 }
-
-.advantages-section .container .advantages-list {
-  list-style-type: none;
-  padding-left: 0;
+.advantages-list {
   display: flex;
-  justify-content: space-between;
   gap: 23px;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
-
-.advantages-section .container .advantages-list .advantage {
+.advantage {
   background-color: #FBFBFB;
   border-radius: 14px;
-  width: 30vw;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 30px;
 }
-
-.advantages-section .container .advantages-list .advantage .advantage-name {
+.advantage-name {
   color: #036;
   font-size: 24px;
   font-weight: 500;
-  line-height: 150%;
   text-transform: uppercase;
   margin: 12px 0;
 }
-
-.advantages-section .container .advantages-list .advantage .advantage-description {
+.advantage-description {
   color: #343434;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 150%;
-  margin: 0;
 }
 
 .aboutUs-section {
-  font-family: "Roboto", sans-serif;
   padding: 50px 0;
 }
-
-.aboutUs-section .container .aboutUs-header {
+.aboutUs-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.aboutUs-section .container .aboutUs-header a {
+.aboutUs-header a {
   color: #343434;
   font-size: 20px;
   font-weight: 500;
-  line-height: 150%;
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-.aboutUs-section .container .aboutUs-main {
+.aboutUs-main {
   display: flex;
   gap: 25px;
 }
-
-.aboutUs-section .container .aboutUs-main .aboutUs-info-cards {
-  list-style-type: none;
-  padding-left: 0;
+.aboutUs-info-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 31px;
+  gap: 31px;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
-
-.aboutUs-section .container .aboutUs-main .aboutUs-info-cards .aboutUs-card {
+.aboutUs-card {
   background-color: #036;
   border-radius: 14px;
   padding-top: 37px;
   text-align: center;
 }
-
-.aboutUs-section .container .aboutUs-main .aboutUs-info-cards .aboutUs-card:first-child {
-  grid-area: 1 / 1 / 2 / 4;
+.aboutUs-card:first-child {
+  grid-column: 1 / -1;
   text-align: left;
   padding-left: 34px;
 }
+.aboutUs-card p {
+  margin-bottom: 10px;
+}
 
-.aboutUs-section .container .aboutUs-main .aboutUs-info-cards .aboutUs-card .card-title {
+.card-title {
   color: #FBFBFB;
-  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-
-.aboutUs-section .container .aboutUs-main .aboutUs-info-cards .aboutUs-card .card-subtitle {
+.card-subtitle-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.card-subtitle {
+  margin: 0;
   color: #FBFBFB;
   font-size: 18px;
   font-weight: 400;
-  line-height: 150%;
   max-width: 594px;
+}
+
+button,
+a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 30px;
+  border-radius: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+button:hover,
+a:hover {
+  background-color: #0d64bc;
+  color: #FBFBFB;
 }
 
 .courses-section {
@@ -329,10 +317,6 @@ body {
   margin: 0;
 }
 
-.courses-section .container .course .course-price p:first-child {
-  border-right: 2px solid #036;
-}
-
 .course-btn {
   background-color: #036;
   color: #fff;
@@ -404,35 +388,41 @@ body {
   background-color: #0d64bc;
   color: #FBFBFB;
 }
-
-.appointment-form {
-  padding: 40px;
-  border-radius: 20px;
-  background-color: #FBFBFB;
+.appointment-section .container .appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-
-.appointment-form input {
-  border: 1px solid #C4C4C4;
-  border-radius: 14px;
-  font-size: 18px;
-  padding: 20px;
+.appointment-section .container .appointment-form input {
+  padding: 24px 14px;
   width: 100%;
-  margin-bottom: 12px;
-}
-
-.appointment-form button {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 150%;
-  padding: 14px 50px;
-  background-color: #036;
-  color: #FBFBFB;
-  border-radius: 14px;
   border: none;
+  border-radius: 4px;
 }
-
-.appointment-form button:hover {
+.appointment-section .container .appointment-form input::placeholder {
+  color: #343434;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.appointment-section .container .appointment-form button {
+  color: #036;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 14px 30px;
+  border-radius: 14px;
+  background-color: #FBFBFB;
+  width: fit-content;
+  border: none;
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.appointment-section .container .appointment-form button:hover {
   background-color: #0d64bc;
+  color: #FBFBFB;
 }
 
 .testimonials-section {
@@ -512,6 +502,12 @@ body {
   border: none;
   height: 32px;
 }
+.testimonials-section .container .testimonials-nav .prev-btn,
+.testimonials-section .container .testimonials-nav .next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .faq-section {
   font-family: "Roboto", sans-serif;
@@ -534,9 +530,15 @@ body {
   gap: 20px;
 }
 .faq-section .container .faq-section-wrapper .questions-list .question-item {
-  padding: 40px;
+  padding: 20px;
   border-radius: 16px;
   border: 1px solid #036;
+}
+.faq-section .container .faq-section-wrapper .questions-list .question-item:first-child {
+  height: 209px;
+}
+.faq-section .container .faq-section-wrapper .questions-list .question-item:not(:first-child) {
+  height: 58px;
 }
 .faq-section .container .faq-section-wrapper .questions-list .question-item .question-item-q {
   font-size: 20px;
@@ -558,7 +560,11 @@ body {
   padding-top: 30px;
   border-top: 1px solid #036;
 }
+.question-form {
+  height: 521px;
+}
 .faq-section .container .faq-section-wrapper .question-form {
+  height: 531px;
   padding: 40px;
   border-radius: 14px;
   background-color: #036;
@@ -577,6 +583,9 @@ body {
   padding-bottom: 40px;
   border-bottom: 1px solid #FBFBFB;
   margin-bottom: 40px;
+}
+textarea {
+  height: 114px;
 }
 .faq-section .container .faq-section-wrapper .question-form input,
 .faq-section .container .faq-section-wrapper .question-form textarea {
@@ -607,31 +616,24 @@ body {
 }
 
 .footer {
+  padding: 32px 0;
   font-family: "Roboto", sans-serif;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .footer .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
-.footer .container .footer-copyright {
+.footer-copyright {
   color: #036;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
 }
-.footer .container .footer-nav {
+.footer-nav {
   display: flex;
-  align-items: center;
   gap: 16px;
 }
-.footer .container .footer-nav a {
-  text-decoration: none;
+.footer-nav a {
   color: #343434;
   font-size: 16px;
   font-weight: 500;
-  line-height: 100%;
-  padding: 12px 8px;
 }
